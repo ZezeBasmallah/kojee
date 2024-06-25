@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #444;
+    background-color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background: radial-gradient(circle farthest-corner at top left, black 5%, rgba(49, 1, 99, 1), purple, lightpink, lightblue, rgba(121, 175, 237, 1), white);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Norwester Regular";
+    src: url('assets/font/norwester-webfont.woff') format(woff),
+        url('assets/font/norwester-webfont.woff2') format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald Regular";
+    src: url('assets/font/oswald-regular-webfont.woff') format(woff),
+        url('assets/font/oswald-regular-webfont.woff2') format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px rgba(49, 1, 99, 0.5) solid;
+    position: fixed;
+    background: radial-gradient(circle farthest-side at top left, black 5%, rgba(49, 1, 99, 1), purple, lightpink);
+    background-size: cover;
+    background-position: 0px 100px;
+    background-position: 0 550px;
+    margin-top: -150px;
+}
+
+.navbar h1 {
+    background: radial-gradient(circle farthest-side at top left,
+            black, gray, blue, lightblue, purple, pink, yellow, lightpink, white);
+    background-clip: text;
+    color: transparent;
+    animation: animatead 10s linear infinite;
+    font-family: Norwester Regular, arial;
+    font-size: 45px;
+}
+
+@keyframes animatead {
+    to {
+        background-position-x: 200px;
+    }
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 15px;
+    background: linear-gradient(to right,
+            black, gray, blue, purple, pink,
+            lightblue, lightpink, orange, yellow, white);
+    background-clip: text;
+    color: transparent;
+    animation: animated 5s linear infinite;
+    font-family: Oswald Regular, arial;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px purple solid;
+    transition: .2s;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 161px;
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 150px auto;
+    background: radial-gradient(ellipse farthest-side at top left, purple, lightpink, lightblue);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: inset 0px 0px 10px 5px white;
+}
+
+.img {
+    height: 600px;
+    background-image: url(assets/genshin.jpg);
+    background-position: 0 -85px;
+    background-size: cover;
+    border-bottom: 5px rgba(94, 19, 173, 0.4) solid;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.section {
+    width: 700px;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+}
+
+.section p {
+    margin-top: 15px;
+    text-indent: 15px;
+    text-shadow: 1px 1px 1px black;
+    font-family: Oswald Regular;
+    font-size: 16px;
+}
+
+.section h1 {
+    text-shadow: 2px 2px 1px black;
+    font-family: Norwester Regular;
+}
+
+.section h2 {
+    margin-top: 15px;
+    text-shadow: 2px 2px 1px black;
+    font-family: Norwester Regular;
+}
+
+.clear {
+    clear: left;
+}
+
+.sidebar {
+    width: 400px;
+    padding: 15px;
+    margin: 10px;
+    float: right;
+}
+
+.sidebar h1 {
+    text-shadow: 2px 2px 1px black;
+    font-family: Norwester Regular;
+}
+
+.sidebar p {
+    text-shadow: 1px 1px 1px black;
+    font-family: Oswald Regular;
+}
+
+.pp {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin: 15px;
+    box-shadow: 0px 0px 0px 2px black,
+        0px 0px 0px 4px lightblue,
+        0px 0px 0px 6px lightpink,
+        0px 0px 0px 8px purple,
+        0px 0px 5px 10px white;
+
+}
+
+.pp:hover {
+    border-radius: 25px;
+    box-shadow: 0px 0px 0px 2px black,
+        0px 0px 0px 4px lightblue,
+        0px 0px 0px 6px lightpink,
+        0px 0px 0px 8px purple,
+        0px 0px 5px 10px white;
+    transition: .2s;
+}
+
+.pp img {
+    width: 150px;
+    height: 150px;
+}
+
+/* .pp {
+    width: 300px;
+    height: 150px;
+    background-image: url(assets/pp.jpg);
+    border-radius: 25px;
+    background-position: cover;
+    background-position: -100px -200px;
+} */
+/* svg {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 20px;
+    float: left;
+    margin: 10px
+} */
+
+.sidebar p {
+    margin: 10px;
+}
+
+.table {
+    width: 700px;
+    margin-top: 100px;
+}
+
+.table h1 {
+    text-align: center;
+}
+
+.border {
+    margin: auto;
+    /* padding: 10px; */
+}
+
+.senjata {
+    width: 700px;
+    margin-top: 100px;
+}
+
+.senjata h1 {
+    text-align: center;
+}
+
+.senjata1 {
+    margin: auto;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: rgba (62, 147, 250, 1);
+    height: 50px;
+    width: 1200px;
+    border-top: 2px white solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: inset 0px 0px 10px 5px white;
+}
+
+.footer p {
+    padding: 15px;
+    text-align: center;
+    font-size: 10px;
+    font-family: Norwester Regular;
+}
